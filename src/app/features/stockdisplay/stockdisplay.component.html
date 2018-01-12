@@ -1,0 +1,26 @@
+<div class="card-list">
+  <div fxLayout="column" fxLayoutGap="10px">
+    <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between" *ngFor="let item of items">
+
+      <mat-card *ngFor="let it of item">
+        <mat-card-title>Ticker Symbol: {{it['symbol']}}</mat-card-title>
+        <mat-card-content>
+          <p>{{it['name']}}</p>
+          <div>
+            <div>Low: {{it['low'] | number: '1.0-2'}}</div>
+            <div>High: {{it['high'] | number: '1.0-2'}}</div>
+            <div>Current: {{it['current'] | number: '1.0-2' }}</div>
+          </div>
+          <div *ngIf="it['openDisplay']" class="space-above">
+            Price delta: {{it['delta'] | number: '1.0-2'}}
+          </div>
+        </mat-card-content>
+        <mat-card-footer>
+          <mat-icon (click)="onInfoClicked(it['symbol'])"
+                    [ngClass]="{priceUp: it['delta']>0, priceDn: it['delta']<0}">info</mat-icon>
+        </mat-card-footer>
+      </mat-card>
+
+    </div>
+  </div>
+</div>

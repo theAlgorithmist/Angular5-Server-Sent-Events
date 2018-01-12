@@ -1,0 +1,45 @@
+/* This demo is simple enough that a single, prebuilt theme should suffice */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import 'assets/styles/vars.scss';
+
+.mainSection
+{
+  margin: $primaryMargin;
+}
+
+.topBuffer
+{
+  margin-top: 10px;
+}
+
+.priceUp
+{
+  color: $priceUpColor;
+}
+
+.priceDn
+{
+  color: $priceDnColor;
+}
+
+body
+{
+  font-family: $fontStack;
+  font-size: $bodyFontSize;
+}
+
+mat-toolbar
+{
+  font-size: 15px;
+}
+
+a.main
+{
+  text-decoration: none;
+}
+
+a.main:hover
+{
+  text-decoration: underline;
+}

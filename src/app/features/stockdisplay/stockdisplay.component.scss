@@ -1,0 +1,37 @@
+.card-list
+{
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.space-above
+{
+  margin-top: 5px;
+}
+
+mat-card
+{
+  width: 140px;
+  padding: 26px;
+}
+
+mat-card-title
+{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+mat-card-content
+{
+  font-size: 12px;
+}
+
+mat-card-footer
+{
+  float: right;
+}
+
+mat-icon:hover
+{
+  cursor: pointer;
+}

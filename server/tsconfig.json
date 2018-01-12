@@ -1,0 +1,26 @@
+{
+  "compilerOptions" : {
+    "target" : "ES6",
+    "module" : "commonjs",
+    "sourceMap" : true,
+    "emitDecoratorMetadata" : true,
+    "experimentalDecorators" : true,
+    "moduleResolution" : "node",
+    "removeComments" : false,
+    "noImplicitAny" : true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "suppressImplicitAnyIndexErrors" : true,
+    "types" : []
+  },
+  "lib": [
+    "es2017",
+    "dom"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

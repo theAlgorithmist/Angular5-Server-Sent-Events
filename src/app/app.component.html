@@ -1,0 +1,11 @@
+<section class="mainSection">
+  <mat-toolbar color="primary">
+    <div class="vertical-align-center">
+      <mat-icon>swap_vert</mat-icon>
+      <span>Server Sent Events</span>
+    </div>
+  </mat-toolbar>
+
+  <app-stockdisplay [prices]="priceData" fxLayoutAlign="center"></app-stockdisplay>
+  <button class="topBuffer" mat-raised-button color="primary" (click)="onSubscribe()">Subscribe to Updates</button>
+</section>
