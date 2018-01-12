@@ -141,7 +141,8 @@ export class AppComponent implements OnInit
       newData[index] = stock;
 
       // the reference has to change to fire the display component's onChanges handler; the array copy is acceptable
-      // since a list of observed stock prices is almost always very small
+      // since a list of observed stock prices is almost always very small.  There is another way to handle this which
+      // will be illustrated in a future demo.
       this.priceData = newData;
 
       this._chgDetectorRef.detectChanges();

@@ -51,7 +51,7 @@ Since the client is relatively small (only two components), this demo is good fo
 
 This is an Angular CLI-generated project, so the client source code resides in the _src_ folder.
 
-Note: In past projects using _Material_, I added the custom theme _.scss_ file into the styles section inside _.angular-cli.json_.  A lot of devs new to Angular do not even know that file exists, so I used a different approach in this demo.  You should be able to deconstruct all styling from the main _styles.scss_ file in the _src_ folder.
+Note: In past projects using _Material_, I added the custom theme _.scss_ file into the styles section inside _.angular-cli.json_.  A lot of developers new to Angular do not even know that file exists, so I used a different approach in this demo.  You should be able to deconstruct all styling from the main _styles.scss_ file in the _src_ folder.
 
 
 ## The Server
